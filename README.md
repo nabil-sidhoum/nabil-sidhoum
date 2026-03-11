@@ -92,6 +92,20 @@ Connecteur HTTP asynchrone pour l'API REST OpenStack Swift, développé pour un 
 [![NuGet](https://img.shields.io/nuget/v/Tools.Swift.Connector.svg?style=flat-square&label=Tools.Swift.Connector)](https://www.nuget.org/packages/Tools.Swift.Connector)
 
 ---
+### 🔍 [PageCorrelationId](https://github.com/nabil-sidhoum/PageCorrelationId)
+
+Propagation automatique d'un Correlation ID métier entre un front ASP.NET Core MVC et une Web API — sans modifier le JavaScript ni les controllers. Né d'un besoin réel en production : relier dans les logs toutes les requêtes déclenchées par une même ouverture de page.
+
+- Middleware de génération/réutilisation du CID via `Sec-Fetch-Mode` header
+- `DelegatingHandler` pour injection automatique du header `X-Correlation-ID` vers l'API
+- Zéro modification côté JavaScript ou controllers métier
+- 13 tests unitaires (xUnit + Moq)
+
+![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white)
+![ASP.NET Core](https://img.shields.io/badge/ASP.NET_Core-512BD4?style=flat-square&logo=dotnet&logoColor=white)
+[![Build & Tests](https://github.com/nabil-sidhoum/PageCorrelationId/actions/workflows/build.yml/badge.svg)](https://github.com/nabil-sidhoum/PageCorrelationId/actions/workflows/build.yml)
+
+---
 
 ### 🗂️ [Portfolio Blazor WebAssembly](https://github.com/nabil-sidhoum/nabil-sidhoum.github.io)
 
