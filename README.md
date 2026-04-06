@@ -4,7 +4,7 @@
 
 Développeur .NET depuis plus de 10 ans, je me suis spécialisé dans un rôle que peu de gens font vraiment bien : **prendre en charge des plateformes complexes, les restructurer sans tout casser, et les rendre évolutives sur le long terme.**
 
-Mon parcours chez IRBIS Finance en est l'exemple le plus concret. J'ai conçu le MVP initial en tant que consultant, quitté le projet, puis été rappelé deux ans plus tard pour reprendre une base de code qui s'était dégradée : architecture non définie, requêtes SQL sous-performantes, synchronisation CRM qui échouait silencieusement sans que personne ne soit alerté. J'ai refondé l'ensemble en **Clean Architecture modulaire**, réécrit la couche données, mis en place l'observabilité manquante, et migré de **.NET Framework 4.6 vers .NET 8** — le tout en environnement parallèle, sans interruption de service sur une plateforme à **200+ connexions par jour**.
+Mon parcours chez IRBIS Finance en est l'exemple le plus concret. J'ai conçu le MVP initial en tant que consultant, quitté le projet, puis été rappelé deux ans plus tard pour reprendre une base de code qui s'était dégradée : architecture non définie, requêtes SQL sous-performantes, synchronisation CRM qui échouait silencieusement sans que personne ne soit alerté. J'ai refondé l'ensemble en **Clean Architecture modulaire**, réécrit la couche données, mis en place l'observabilité manquante, et migré de **.NET Framework 4.6 vers .NET 8** — le tout en environnement parallèle, sans interruption de service sur une plateforme.
 
 Ce type de chantier — reprendre, stabiliser, moderniser — c'est ce dans quoi je suis le plus à l'aise.
 
