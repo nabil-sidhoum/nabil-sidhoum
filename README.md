@@ -1,124 +1,92 @@
-# Nabil SIDHOUM — Tech Lead .NET
+# Nabil SIDHOUM · Tech Lead .NET
 
-> *Je ne me contente pas de livrer des fonctionnalités — je construis des bases sur lesquelles les équipes peuvent travailler avec confiance pendant des années.*
+Tech Lead .NET hands-on à Paris, 11 ans d'expérience. Je conçois des applications .NET qui tiennent dans la durée, et en ce moment l'outillage qui permet à une équipe de garder ses standards quand une partie du code est écrite par un assistant.
 
-Développeur .NET depuis plus de 10 ans, je me suis spécialisé dans un rôle que peu de gens font vraiment bien : **prendre en charge des plateformes complexes, les restructurer sans tout casser, et les rendre évolutives sur le long terme.**
-
-Mon parcours chez IRBIS Finance en est l'exemple le plus concret. J'ai conçu le MVP initial en tant que consultant, quitté le projet, puis été rappelé deux ans plus tard pour reprendre une base de code qui s'était dégradée : architecture non définie, requêtes SQL sous-performantes, synchronisation CRM qui échouait silencieusement sans que personne ne soit alerté. J'ai refondé l'ensemble en **Clean Architecture modulaire**, réécrit la couche données, mis en place l'observabilité manquante, et migré de **.NET Framework 4.6 vers .NET 8** — le tout en environnement parallèle, sans interruption de service sur une plateforme.
-
-Ce type de chantier — reprendre, stabiliser, moderniser — c'est ce dans quoi je suis le plus à l'aise.
-
----
-
-## Ce que je fais concrètement
-
-```
-├── Conception technique        → Architecture Clean/modulaire, séparation des responsabilités,
-│                                 modélisation du domaine métier
-├── Développement actif         → API REST, couche domaine, accès aux données (EF Core / SQL Server)
-├── Migration & modernisation   → .NET Framework → .NET 8, refonte progressive sans régression
-├── Qualité & observabilité     → Revues de code, monitoring, alerting, réduction de dette technique
-├── CI/CD                       → Pipelines Azure DevOps, automatisation du déploiement
-└── Accompagnement technique    → Encadrement de développeurs, choix d'architecture, montée en compétence
-```
-
----
-
-## Convictions techniques
-
-**Sur l'architecture**
-Une bonne architecture ne se voit pas — elle se ressent quand on peut ajouter une fonctionnalité sans avoir peur de casser quelque chose. Je construis des systèmes modulaires où chaque couche a une responsabilité claire, pas des systèmes parfaits sur le papier mais impossibles à maintenir en pratique.
-
-**Sur la dette technique**
-Elle est inévitable. Ce qui compte c'est de la rendre visible, de la prioriser honnêtement, et de la résorber progressivement sans bloquer les livraisons. J'ai rarement vu une réécriture complète mieux réussir qu'une refonte incrémentale bien menée.
-
-**Sur les revues de code**
-Ce n'est pas un contrôle qualité — c'est un outil de transmission. Une bonne revue de code apprend plus à l'équipe qu'une semaine de formation.
-
----
-
-## Stack
-
-**Développement**
-
-![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white)
-![.NET 8](https://img.shields.io/badge/.NET_8-512BD4?style=flat-square&logo=dotnet&logoColor=white)
-![ASP.NET Core](https://img.shields.io/badge/ASP.NET_Core-512BD4?style=flat-square&logo=dotnet&logoColor=white)
-![Entity Framework Core](https://img.shields.io/badge/EF_Core-512BD4?style=flat-square&logo=dotnet&logoColor=white)
-![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoft-sql-server&logoColor=white)
-![Blazor WASM](https://img.shields.io/badge/Blazor_WASM-512BD4?style=flat-square&logo=blazor&logoColor=white)
-
-**Architecture & Pratiques**
-
-![Clean Architecture](https://img.shields.io/badge/Clean_Architecture-1F4E79?style=flat-square)
-![DDD](https://img.shields.io/badge/Domain_Driven_Design-1F4E79?style=flat-square)
-![TDD](https://img.shields.io/badge/Sensibilité_TDD-1F4E79?style=flat-square)
-![Code Review](https://img.shields.io/badge/Code_Review-1F4E79?style=flat-square)
-
-**CI/CD & Outils**
-
-![Azure DevOps](https://img.shields.io/badge/Azure_DevOps-0078D7?style=flat-square&logo=azure-devops&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
-![NuGet](https://img.shields.io/badge/NuGet-004880?style=flat-square&logo=nuget&logoColor=white)
-![Dynamics CRM](https://img.shields.io/badge/Dynamics_CRM-0078D4?style=flat-square&logo=microsoft&logoColor=white)
-
----
+**Disponible à partir de novembre 2026** pour un poste de Tech Lead .NET au sein d'une squad, à Paris ou en remote France.
 
 ## Projets publics
 
-### 🔌 [DynamicsCrmConnector](https://github.com/nabil-sidhoum/DynamicsCrmConnector)
+Les deux connecteurs répondent à des besoins que j'avais chez IRBIS Finance, repris en version autonome, testée et publiée sur NuGet. PageCorrelationId est un projet d'exemple : un problème de production, et ma façon de le traiter.
 
-Né d'un besoin réel chez un client : un connecteur propre, injectable et typé pour l'API OData de Microsoft Dynamics CRM, là où les solutions disponibles étaient trop lourdes ou mal maintenues.
+| Projet | En bref | |
+|---|---|---|
+| [DynamicsCrmConnector](https://github.com/nabil-sidhoum/DynamicsCrmConnector) | Connecteur typé pour l'API Web de Dynamics CRM : OAuth2, CRUD, FetchXML paginé. 49 tests, publication NuGet conditionnée aux tests. | [![NuGet](https://img.shields.io/nuget/v/Tools.DynamicsCRM.svg?style=flat-square&label=NuGet)](https://www.nuget.org/packages/Tools.DynamicsCRM) |
+| [OpenstackSwiftConnector](https://github.com/nabil-sidhoum/OpenstackSwiftConnector) | Connecteur asynchrone pour le stockage objet OpenStack Swift (OVH), renouvellement automatique des tokens. 33 tests. | [![NuGet](https://img.shields.io/nuget/v/Tools.Swift.Connector.svg?style=flat-square&label=NuGet)](https://www.nuget.org/packages/Tools.Swift.Connector) |
+| [PageCorrelationId](https://github.com/nabil-sidhoum/PageCorrelationId) | Un Correlation ID de bout en bout entre un front ASP.NET Core MVC et une Web API, sans toucher au JavaScript ni aux controllers. 13 tests. | [![Build & Tests](https://github.com/nabil-sidhoum/PageCorrelationId/actions/workflows/build.yml/badge.svg)](https://github.com/nabil-sidhoum/PageCorrelationId/actions/workflows/build.yml) |
+| [Portfolio](https://github.com/nabil-sidhoum/nabil-sidhoum.github.io) | Blazor WebAssembly, contenu piloté par JSON, déployé sur GitHub Pages. | [![Site](https://img.shields.io/badge/site-en_ligne-1F4E79?style=flat-square)](https://nabil-sidhoum.github.io) |
 
-- Authentification OAuth2 applicative (ClientId / SecretId), gestion automatique des tokens
-- CRUD complet + support FetchXML avec pagination automatique
-- Extension typée `Tools.DynamicsCRM.Extensions` pour mapping d'entités fortement typées
-- Pipeline NuGet automatisé via GitHub Actions
+## En cours · dépôts privés
+
+Deux projets en dépôt privé le temps de les stabiliser. Les articles en racontent les étapes, et je les présente volontiers sur demande.
+
+### 📡 VeilleTech
+
+Un pipeline .NET 10 qui tourne seul trois fois par semaine, sans serveur ni coût, pour ma veille .NET, IA et architecture.
+
+- Trois profils (dotnet, ia, archi), chacun avec son workflow cron sur GitHub Actions, sur un build partagé
+- Collecte RSS, déduplication, persistance EF Core + SQLite, publication sur Discord
+- Un seul maillon confié à un LLM, le jugement : chaque article est noté par Llama 3.3 (via Groq) selon un profil Tech Lead .NET. Tout le reste est déterministe.
+- 89 tests xUnit
+- Le template ci-dessous y est appliqué : sa règle de revue des intégrations LLM y a trouvé une faille critique, corrigée depuis
+
+📝 À lire :
+- [J'ai automatisé ma veille technique .NET](https://nabil-sidhoum.github.io/blog/automatiser-veille-technique-dotnet)
+- [Ma CI a cassé sans que je touche une ligne de code : anatomie d'une dette invisible](https://nabil-sidhoum.github.io/blog/ci-cassee-dette-invisible). Une alerte de sécurité sur une dépendance transitive de SQLite, et pourquoi je refuse de faire taire l'alarme.
+- [J'ai ajouté une règle de sécurité LLM à mon template. Elle a trouvé une faille dans mon propre code](https://nabil-sidhoum.github.io/blog/securiser-entrees-sorties-llm)
+
+### 🤖 dotnet-claude-template
+
+Je l'ai créé pour confier du code à un assistant sans baisser le niveau que j'exigeais d'une équipe : mêmes revues, mêmes tests, même règle de merge. Il s'adresse aux projets .NET en Clean Architecture.
+
+- **Le développeur décide** : rien ne s'implémente sans plan validé, les reviewers sont en lecture seule, aucun agent ne merge
+- **15 agents spécialisés** : planification de feature, orchestration, revues ciblées (architecture, EF Core, sécurité, tests, logs Serilog), vérification visuelle de l'interface. 371 commits depuis avril 2026.
+- **Des garde-fous qui tiennent sans agent** : hooks Git (format, tests, Conventional Commits), détection de secrets, CI et protection de branches
+- **Une qualité mesurée** : 14 oracles de test sur entrées figées, dont une fixture anti-injection de prompt ; les choix du template sont tracés dans 16 ADR et les plus structurants passent par un débat contradictoire
+
+📝 À lire : [Pour que l'IA vérifie mon code, il fallait d'abord que mes règles puissent échouer](https://nabil-sidhoum.github.io/blog/regles-qui-peuvent-echouer). Le template prescrivait 101 règles, et aucune ne cassait le build.
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="assets/guideline-adoptant.png"><img src="assets/guideline-adoptant.png" width="400" alt="Du clone à la release : chaque commande à sa place"></a>
+<br><sub><b>Le cycle de vie d'un projet adoptant.</b> Deux arrêts restent au développeur : « STOP : plan », avant toute ligne de code, et « Merge ».</sub>
+</td>
+<td width="50%" valign="top">
+<a href="assets/diagram-confiance.png"><img src="assets/diagram-confiance.png" width="400" alt="Confiance : qui peut écrire, ce qui est tracé, qui décide"></a>
+<br><sub><b>L'audit de confiance en six questions.</b> Chaque garantie cite le fichier du dépôt qui la prouve.</sub>
+</td>
+</tr>
+</table>
+
+<sub>Cliquer sur un schéma pour l'afficher en taille réelle.</sub>
+
+## Parcours
+
+- **2021-2026 · IRBIS Finance** · Tech Lead .NET, promu CTO en 2024. Référent technique et architecte de 5 applications .NET en production autour de Dynamics CRM.
+  - **L'équipe** : un consultant recruté pour le portage, puis un développeur junior que j'ai formé pendant trois ans jusqu'au poste de lead dev. Avant mon départ, j'ai recruté un nouveau développeur junior ; c'est désormais lui qui le forme, en s'appuyant sur la passation et les pratiques que j'avais mises en place.
+  - **La façon de travailler** : revue obligatoire de chaque PR de l'équipe, recette métier, conventions de code et documentation d'accueil des développeurs
+  - **Avec le métier** : un gel fonctionnel de 6 mois négocié pour mener le portage
+  - **Les résultats** : legacy .NET Framework réécrit progressivement jusqu'à .NET 8, fiches PDF clients ramenées de 40-60 s à 4-5 s
+- **2017-2021 · SoftFluent** · Consultant .NET, dont la conception de l'espace client IRBIS
+- **2015-2017 · Capgemini** · Consultant .NET, projets Dynamics CRM
+
+[Le CV complet en PDF](https://nabil-sidhoum.github.io/assets/cv.pdf) · [Tous les articles](https://nabil-sidhoum.github.io/blog)
+
+## Stack
 
 ![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white)
-[![NuGet](https://img.shields.io/nuget/v/Tools.DynamicsCRM.svg?style=flat-square&label=Tools.DynamicsCRM)](https://www.nuget.org/packages/Tools.DynamicsCRM)
-
----
-
-### ☁️ [OpenstackSwiftConnector](https://github.com/nabil-sidhoum/OpenstackSwiftConnector)
-
-Connecteur HTTP asynchrone pour l'API REST OpenStack Swift, développé pour un contexte de stockage objet OVH. Même philosophie que DynamicsCrmConnector : léger, injectable, sans dépendance superflue.
-
-- Renouvellement automatique des tokens d'authentification OVH OpenStack
-- Interface `ISwiftClient` injectable via DI native .NET
-- Gestion des conteneurs et upload de fichiers
-
-![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white)
-[![NuGet](https://img.shields.io/nuget/v/Tools.Swift.Connector.svg?style=flat-square&label=Tools.Swift.Connector)](https://www.nuget.org/packages/Tools.Swift.Connector)
-
----
-### 🔍 [PageCorrelationId](https://github.com/nabil-sidhoum/PageCorrelationId)
-
-Propagation automatique d'un Correlation ID métier entre un front ASP.NET Core MVC et une Web API — sans modifier le JavaScript ni les controllers. Né d'un besoin réel en production : relier dans les logs toutes les requêtes déclenchées par une même ouverture de page.
-
-- Middleware de génération/réutilisation du CID via `Sec-Fetch-Mode` header
-- `DelegatingHandler` pour injection automatique du header `X-Correlation-ID` vers l'API
-- Zéro modification côté JavaScript ou controllers métier
-- 13 tests unitaires (xUnit + Moq)
-
-![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white)
+![.NET 8 / 10](https://img.shields.io/badge/.NET_8_%2F_10-512BD4?style=flat-square&logo=dotnet&logoColor=white)
 ![ASP.NET Core](https://img.shields.io/badge/ASP.NET_Core-512BD4?style=flat-square&logo=dotnet&logoColor=white)
-[![Build & Tests](https://github.com/nabil-sidhoum/PageCorrelationId/actions/workflows/build.yml/badge.svg)](https://github.com/nabil-sidhoum/PageCorrelationId/actions/workflows/build.yml)
-
----
-
-### 🗂️ [Portfolio Blazor WebAssembly](https://github.com/nabil-sidhoum/nabil-sidhoum.github.io)
-
-Portfolio en ligne développé en Blazor WebAssembly — parce qu'un Tech Lead .NET qui fait son portfolio en React, c'est un peu dommage. Architecture en composants Razor réutilisables, déploiement automatisé sur GitHub Pages via GitHub Actions.
-
-![Blazor](https://img.shields.io/badge/Blazor_WASM-512BD4?style=flat-square&logo=blazor&logoColor=white)
+![EF Core](https://img.shields.io/badge/EF_Core-512BD4?style=flat-square&logo=dotnet&logoColor=white)
+![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoft-sql-server&logoColor=white)
+![Dynamics CRM](https://img.shields.io/badge/Dynamics_CRM-0078D4?style=flat-square&logo=microsoft&logoColor=white)
+![Azure DevOps](https://img.shields.io/badge/Azure_DevOps-0078D7?style=flat-square&logo=azure-devops&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
-[![Demo](https://img.shields.io/badge/Demo-nabil--sidhoum.github.io-1F4E79?style=flat-square)](https://nabil-sidhoum.github.io)
+![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white)
 
----
+## Contact
 
-## Me contacter
-
+[![CV](https://img.shields.io/badge/CV-PDF-1F4E79?style=flat-square&logo=adobeacrobatreader&logoColor=white)](https://nabil-sidhoum.github.io/assets/cv.pdf)
 [![Portfolio](https://img.shields.io/badge/Portfolio-nabil--sidhoum.github.io-1F4E79?style=flat-square&logo=google-chrome&logoColor=white)](https://nabil-sidhoum.github.io)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Nabil_Sidhoum-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nabil-s-32b53ab8)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-nabil--sidhoum-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nabil-sidhoum)
 [![Email](https://img.shields.io/badge/Email-nabil.sidhoum@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:nabil.sidhoum@gmail.com)
